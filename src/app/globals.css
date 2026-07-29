@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: #07111d;
+  color: #eaeaea;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+::selection {
+  background-color: #d4af37;
+  color: #07111d;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #07111d;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a2c3f;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+.gold-text {
+  background: linear-gradient(110deg, #a9862b 20%, #f4e3a1 40%, #d4af37 55%, #f4e3a1 70%, #a9862b 90%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+
+.hairline {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent);
+}
+
+.container-opal {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .container-opal {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
